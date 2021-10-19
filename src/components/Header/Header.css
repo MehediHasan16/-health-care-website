@@ -1,0 +1,24 @@
+span{
+    color:rgb(241, 53, 53);
+}
+
+li a {
+  text-decoration: none;
+  
+    font-weight: 500;
+    
+    font-size: 20px;
+    margin-right: 47px;
+  
+  
+}
+.nav-font{
+    text-align: center;
+    color:#444;
+}
+
+li a:hover {
+    color:#444;
+    border-bottom: 5px solid rgb(236, 97, 97);
+    border-radius: 2px;
+}
