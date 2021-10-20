@@ -18,6 +18,9 @@ import AuthProvider from './Context/AuthProvider';
 import PrivateRouter from './components/PrivateRouter/PrivateRouter';
 import Footer from './components/Footer/Footer';
 
+import Contact from './components/Contact/Contact';
+import AllServices from './components/AllServices/AllServices';
+
 
 function App() {
   return (
@@ -25,6 +28,7 @@ function App() {
       <AuthProvider>
         <Router>
           <Header></Header>
+
           <Switch>
             <Route exact path='/'>
               <Home></Home>
@@ -34,6 +38,10 @@ function App() {
               <Home></Home>
 
             </Route>
+            <Route path='/allservices'>
+              <AllServices></AllServices>
+
+            </Route>
             <Route exact path='/login'>
 
               <Login></Login>
@@ -41,6 +49,10 @@ function App() {
             <Route exact path='/register'>
 
               <Register></Register>
+            </Route>
+            <Route exact path='/contact'>
+
+              <Contact></Contact>
             </Route>
             <PrivateRouter path='/serviceDetail/:serviceId'>
 
