@@ -66,7 +66,7 @@ const Header = () => {
 
             </div>
             <div className='m-5'>
-                <h4>{user.displayName}</h4>
+                <h4>{user?.displayName}</h4>
             </div>
 
         </div>
