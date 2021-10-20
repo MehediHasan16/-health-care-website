@@ -5,9 +5,13 @@ import logo from '../../image/heart-logo-1.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 
+import useAuth from '../../hooks/useAuth';
+
 
 
 const Header = () => {
+    const { user, handleLogout } = useAuth();
+    console.log(user);
     const element1 = <FontAwesomeIcon icon={faFacebook} />
     const element2 = <FontAwesomeIcon icon={faTwitterSquare} />
     return (
@@ -31,11 +35,14 @@ const Header = () => {
                                     <li class="nav-item">
                                         <Link className=" nav-font" to='/home'>Home</Link>
                                     </li>
-                                    <li class="nav-item">
+                                    {user?.email ? <li onClick={handleLogout} className=" nav-font nav-item" >Logout</li>
 
-                                        <Link className=" nav-font" to='/Login'>Login</Link>
+                                        :
+                                        <li class="nav-item">
 
-                                    </li>
+                                            <Link className=" nav-font" to='/login'>Login</Link>
+
+                                        </li>}
                                     <li class="nav-item">
 
                                         <Link className=" nav-font" to='/register'>Register</Link>
@@ -52,12 +59,12 @@ const Header = () => {
 
             </div>
             <div className=''>
-                <p>{element1}</p>
-                <p>{element2}</p>
+                <h4>User Name:{user.email}</h4>
             </div>
 
         </div>
     );
 };
+
 
 export default Header;

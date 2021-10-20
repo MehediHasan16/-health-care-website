@@ -12,32 +12,49 @@ import Home from './components/Home/Home';
 import Login from './components/LogIn/Login';
 import Register from './components/Register/Register';
 import Header from './components/Header/Header';
+import Error from './components/Error/Error';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
+import AuthProvider from './Context/AuthProvider';
+import PrivateRouter from './components/PrivateRouter/PrivateRouter';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
   return (
     <div className='App'>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
 
-          </Route>
-          <Route exact path='/home'>
-            <Home></Home>
+            </Route>
+            <Route exact path='/home'>
+              <Home></Home>
 
-          </Route>
-          <Route exact path='/login'>
+            </Route>
+            <Route exact path='/login'>
 
-            <Login></Login>
-          </Route>
-          <Route exact path='/register'>
+              <Login></Login>
+            </Route>
+            <Route exact path='/register'>
 
-            <Register></Register>
-          </Route>
-        </Switch>
-      </Router>
+              <Register></Register>
+            </Route>
+            <PrivateRouter path='/serviceDetail/:serviceId'>
+
+              <ServiceDetail></ServiceDetail>
+            </PrivateRouter>
+            <Route path='*'>
+              <Error></Error>
+
+            </Route>
+
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Chase Franklin",
+        "description": "Podcasting operational change management inside of workflows to establish a framework.",
+        "image": "http://medicare.bold-themes.com/cardiology/wp-content/uploads/sites/10/2018/01/img-team-member-01.jpg",
+        "character": "FOUNDER / CHIEF SURGEON",
+        "visitngTime": "Monday 8:00 AM – 2:30 PM"
+    },
+    {
+        "id": 2,
+        "name": "Anna Wilson",
+        "description": "Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive .",
+        "image": "http://medicare.bold-themes.com/cardiology/wp-content/uploads/sites/10/2018/01/img-team-member-02.jpg",
+        "character": "ASSISTANT SURGEON",
+        "visitngTime": "Tuesday 8:00 AM – 7:00 PM"
+    },
+    {
+        "id": 3,
+        "name": "Peggie Cannon",
+        "description": "Seamlessly visualize quality intellectual capital without superior collaboration and installed base portals.",
+        "image": "https://www.woodlandshospital.in/images/doctor-img/monimoy-ghosh.jpg",
+        "character": "LEAD NURSE",
+        "visitngTime": "Wednesday 8:00 AM – 7:00 PM"
+    },
+    {
+        "id": 4,
+        "name": "Peggie Cannon",
+        "description": "Energistically scale future-proof core competencies vis-a-vis impactful experiences with optimal networks.",
+        "image": "http://medicare.bold-themes.com/cardiology/wp-content/uploads/sites/10/2018/01/img-team-member-04.jpg",
+        "character": "NURSE",
+        "visitngTime": "Wednesday 8:00 AM – 7:00 PM"
+    },
+    {
+        "id": 5,
+        "name": "George Button",
+        "description": "Clinical cardiologists can diagnose, confirm and manage heart disease. This is the specialist you need .",
+        "image": "https://doctors.fortishealthcare.com/uploads/assets/doctors/2020/5/1589435358profile.png",
+        "character": "CLINICAL CARDIOLOGISTS",
+        "visitngTime": "Friday 8:00 AM – 7:00 PM"
+    },
+    {
+        "id": 6,
+        "name": "Gabriela Beckett",
+        "description": "Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts.",
+        "image": "http://medicare.bold-themes.com/clinic/wp-content/uploads/sites/2/2015/12/pic-team-1.jpg",
+        "character": "INTERVENTIONAL CARDIOLAGISTS",
+        "visitngTime": "Tuesday 8:00 AM – 7:00 PM"
+    }
+]

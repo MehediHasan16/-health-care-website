@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
-
+import logo5 from '../../image/register.jpg'
 const Register = () => {
-    const { handleRegistration, handlePasswordChange, handleEmailChange, handleGoogleSigin } = useFirebase();
+    const { handleRegistration, handlePasswordChange, handleEmailChange, handleGoogleSigin } = useAuth();
 
     return (
         <div className='m-5'>
+            <h1 className='text-primary m-5'>Please Register Now</h1>
             <div className='row'>
                 <div className='col-md-6'>
                     <form onSubmit={handleRegistration}>
@@ -22,22 +25,22 @@ const Register = () => {
                             </div>
                         </div>
 
-                        <div className="row mb-3">
-                            <div className="col-sm-10 offset-sm-2">
-                                <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="gridCheck1" />
-                                    <label className="form-check-label" htmlFor="gridCheck1">
-                                        Example checkbox
-                                    </label>
-                                </div>
+                        <div className='d-flex justify-content-center align-items-center '>
+                            <div>
+                                <button type="submit" className="btn btn-primary m-4">Submit</button>
+                            </div>
+
+                            <div>
+
+                                <button onClick={handleGoogleSigin} type="button" class="btn btn-danger">Google Sigin</button>
                             </div>
                         </div>
-                        <button type="submit" className="btn btn-primary">Sign in</button>
                     </form>
-                    <button onClick={handleGoogleSigin}>Google Sigin </button>
+
+                    <Link to='./login'>Already have a account?</Link>
                 </div>
                 <div className='col-md-6'>
-                    <h1>this is pic</h1>
+                    <img className='w-75' src={logo5} alt="" />
                 </div>
             </div>
         </div>
