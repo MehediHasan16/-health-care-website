@@ -4,7 +4,11 @@ Our healthcare Live site link: [https://heart-health-care.web.app](https://heart
 
 ##  Medicare website details below
 
+### `Patients can make appointments for his/her specific health issues.` 
 
+### `Patients can see the details about services. `
+
+### `Login Authentication Using Firebase and Implemented Private Router`
 
 ### `The different types of heart specialists`
 
